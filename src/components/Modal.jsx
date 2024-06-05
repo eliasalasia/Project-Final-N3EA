@@ -13,7 +13,7 @@ function Modal() {
     };
 
     return (
-        <div className="relative h-screen md:w-96 bg-[#100E1D] text-white">
+        <div className="relative h-screen sm:w-full md:w-96 bg-[#100E1D] text-white">
             <WeatherCard weatherData={weatherData} toggleModal={toggleModal} />
             <SearchModal 
                 isModalOpen={isModalOpen}

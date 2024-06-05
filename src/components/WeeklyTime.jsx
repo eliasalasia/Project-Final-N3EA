@@ -16,7 +16,7 @@ export const WeeklyTime = () => {
     };
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mx-auto max-w-lg md:max-w-4xl relative">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-4 w-full">
             <div className="flex justify-end items-center space-x-4 mb-4 md:col-span-5">
                 <button
                     className={`bg-white text-black p-2 rounded-full ${unit === 'C' ? 'bg-blue-500' : 'bg-white'}`}
@@ -28,7 +28,7 @@ export const WeeklyTime = () => {
                 >°F</button>
             </div>
             {dailyForecasts.slice(0, 5).map((forecast, index) => (
-                <div key={index} className="bg-customSecondaryDark p-3 rounded-lg text-center w-full md:w-32 h-44 font-raleway">
+                <div key={index} className="bg-customSecondaryDark p-3 rounded-lg text-center w-full  h-44 font-raleway">
                     <p className="text-xs mb-1">{new Date(forecast.dt * 1000).toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' })}</p>
                     <img src={`https://openweathermap.org/img/wn/${forecast.weather[0].icon}.png`} alt="weather icon" className="mx-auto mb-2 w-10 h-10" />
                     <p className="text-xs">

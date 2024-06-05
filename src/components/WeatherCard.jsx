@@ -52,7 +52,7 @@ function WeatherCard({ weatherData, toggleModal }) {
     }, [weatherData]);
 
     return (
-        <div className="absolute top-0 left-0 h-full w-full max-w-[390px] mx-auto bg-[#1E213A] p-6 transition-transform duration-300 ease-in-out transform translate-x-0">
+        <div className="absolute top-0 left-0 h-full w-full md:max-w-[390px] mx-auto bg-[#1E213A] p-6 transition-transform duration-300 ease-in-out transform translate-x-0">
             {/* Search Button */}
             <div className="flex justify-between items-center mb-10">
                 <button 

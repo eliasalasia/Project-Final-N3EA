@@ -10,10 +10,10 @@ export const TemperaturTime = () => {
     const currentWeather = weatherData.list[0];
 
     return (
-        <div className="flex flex-col items-center">
-            <h2 className="text-2xl font-medium mb-8 pr-96">Today's Highlights</h2>
+        <div className="flex flex-col w-full">
+           <h2 className="text-2xl font-medium mb-8 w-auto text-left">Today's Highlights</h2> 
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[700px] w-full">
+           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
                 <div className="bg-customSecondaryDark p-6 rounded-md text-center">
                     <p className="text-lg mb-2 font-raleway">Wind status</p>
                     <p className="text-4xl font-bold mb-2">{currentWeather.wind.speed}<span className="text-2xl font-normal"> mph</span></p>
@@ -50,9 +50,7 @@ export const TemperaturTime = () => {
                 </div>
             </div>
 
-            <p className="text-center mt-12 text-[#88869D]">
-                created by <span className="font-bold">username</span> - devChallenges.io
-            </p>
+          
         </div>
     );
 }
